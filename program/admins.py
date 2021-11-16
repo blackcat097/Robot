@@ -34,7 +34,7 @@ async def update_admin(client, message):
         new_admins.append(u.user.id)
     admins[message.chat.id] = new_admins
     await message.reply_text(
-        "✅ Bot **reloaded correctly !**\n✅ **Admin list** has been **updated !**"
+        "**𝗗𝗮𝘁𝗮 𝗥𝗲𝗹𝗼𝗮𝗱𝗲𝗱..!**"
     )
 
 
@@ -59,7 +59,7 @@ async def skip(client, m: Message):
     if len(m.command) < 2:
         op = await skip_current_song(chat_id)
         if op == 0:
-            await m.reply("❌ nothing is currently playing")
+            await m.reply("**𝗡𝗼𝘁𝗵𝗶𝗻𝗴 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 𝗕𝗮𝗯𝘆** 🙂")
         elif op == 1:
             await m.reply("✅ __Queues__ **is empty.**\n\n**• userbot leaving voice chat**")
         elif op == 2:
@@ -67,7 +67,7 @@ async def skip(client, m: Message):
         else:
             await m.reply_photo(
                 photo=f"{IMG_3}",
-                caption=f"⏭ **Skipped to the next track.**\n\n🏷 **Name:** [{op[0]}]({op[1]})\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `Playing`\n🎧 **Request by:** {m.from_user.mention()}",
+                caption=f"**❰ 𝗕𝗿𝗼𝗸𝗲𝗻 ❘ 𝟮.𝟬 ❱ ❤ 𝗡𝗼𝘄 🤘 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 📀 𝗙𝗿𝗼𝗺 🔊 𝗖𝗿𝗲𝗮𝘁𝗼𝗿 😀 𝗣𝗮𝘃𝗮𝗻 😎 𝗦𝗲𝗿𝘃𝗲𝗿...**🤞\n\n ⏭ **𝗕𝗿𝗼𝗸𝗲𝗻 𝗦𝗸𝗶𝗽𝗽𝗲𝗱..!**",
                 reply_markup=keyboard,
             )
     else:
@@ -99,11 +99,11 @@ async def stop(client, m: Message):
         try:
             await call_py.leave_group_call(chat_id)
             clear_queue(chat_id)
-            await m.reply("✅ **streaming has ended.**")
+            await m.reply("**𝗕𝗿𝗼𝗸𝗲𝗻 𝗦𝘁𝗿𝗲𝗮𝗺 𝗘𝗻𝗱𝗲𝗱..!**")
         except Exception as e:
             await m.reply(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply("❌ **nothing in streaming**")
+        await m.reply("**𝗡𝗼𝘁𝗵𝗶𝗻𝗴 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 𝗕𝗮𝗯𝘆** 🙂")
 
 
 @Client.on_message(
@@ -139,7 +139,7 @@ async def resume(client, m: Message):
         except Exception as e:
             await m.reply(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply("❌ **nothing in streaming**")
+        await m.reply("**𝗡𝗼𝘁𝗵𝗶𝗻𝗴 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 𝗕𝗮𝗯𝘆** 🙂")
 
 
 @Client.on_message(
@@ -157,7 +157,7 @@ async def mute(client, m: Message):
         except Exception as e:
             await m.reply(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply("❌ **nothing in streaming**")
+        await m.reply("**𝗡𝗼𝘁𝗵𝗶𝗻𝗴 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 𝗕𝗮𝗯𝘆** 🙂")
 
 
 @Client.on_message(
@@ -175,7 +175,7 @@ async def unmute(client, m: Message):
         except Exception as e:
             await m.reply(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply("❌ **nothing in streaming**")
+        await m.reply("**𝗡𝗼𝘁𝗵𝗶𝗻𝗴 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 𝗕𝗮𝗯𝘆** 🙂")
 
 
 @Client.on_callback_query(filters.regex("cbpause"))
@@ -195,7 +195,7 @@ async def cbpause(_, query: CallbackQuery):
         except Exception as e:
             await query.edit_message_text(f"🚫 **error:**\n\n`{e}`", reply_markup=bcl)
     else:
-        await query.answer("❌ nothing is currently streaming", show_alert=True)
+        await query.answer("**𝗕𝗿𝗼𝗸𝗲𝗻 𝗦𝘁𝗿𝗲𝗮𝗺 𝗘𝗻𝗱𝗲𝗱** 🙂", show_alert=True)
 
 
 @Client.on_callback_query(filters.regex("cbresume"))
@@ -215,7 +215,7 @@ async def cbresume(_, query: CallbackQuery):
         except Exception as e:
             await query.edit_message_text(f"🚫 **error:**\n\n`{e}`", reply_markup=bcl)
     else:
-        await query.answer("❌ nothing is currently streaming", show_alert=True)
+        await query.answer("**𝗡𝗼𝘁𝗵𝗶𝗻𝗴 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 𝗕𝗮𝗯𝘆** 🙂", show_alert=True)
 
 
 @Client.on_callback_query(filters.regex("cbstop"))
@@ -293,4 +293,4 @@ async def change_volume(client, m: Message):
         except Exception as e:
             await m.reply(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply("❌ **nothing in streaming**")
+        await m.reply("**𝗡𝗼𝘁𝗵𝗶𝗻𝗴 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 𝗕𝗮𝗯𝘆** 🙂")
