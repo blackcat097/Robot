@@ -53,13 +53,13 @@ async def _human_time_duration(seconds):
 async def start_(client: Client, message: Message):
     await message.reply_text(
         f"""**𝗧𝗵𝗲 𝗙𝗮𝘀𝘁𝗲𝘀𝘁 𝗔𝗻𝗱 𝗡𝗲𝘅𝘁 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗶𝗼𝗻 𝗛𝗶𝗴𝗵 𝗤𝘂𝗮𝗹𝗶𝘁𝘆 𝗠𝘂𝘀𝗶𝗰 𝗣𝗹𝗮𝘆𝗲𝗿...**
-**𝗗𝗲𝘀𝗶𝗴𝗻𝗲𝗱 𝗕𝘆 :** [𝗖𝗿𝗲𝗮𝘁𝗼𝗿 𝗣𝗮𝘃𝗮𝗻](https://t.me/Crestern) 
+**𝗗𝗲𝘀𝗶𝗴𝗻𝗲𝗱 𝗕𝘆 :** [𝗖𝗿𝗲𝗮𝘁𝗼𝗿 𝗣𝗮𝘃𝗮𝗻](https://t.me/itsCrePavan) 
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "😀 𝗔𝗗𝗗 𝗠𝗘 😀",
+                        "😀  𝗔𝗗𝗗 𝗠𝗘  😀",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
