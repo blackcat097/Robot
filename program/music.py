@@ -137,7 +137,7 @@ async def play(c: Client, m: Message):
                 await suhu.delete()
                 await m.reply_photo(
                     photo=f"{IMG_1}",
-                    caption=f"💡 **Bʀᴏᴋᴇɴ Sᴛʀᴇᴀᴍɪɴɢ »** `{pos}`\n\n🏷 **Nᴀᴍᴇ :** [{songname}]({link})\n✨ **Gʀᴏᴜᴘ :** `{chat_id}`\n👨🏻‍💼 **Pʟᴀʏᴇʀ :** {m.from_user.mention()}\n\n❄ **Nᴏᴡ 💥 Pʟᴀʏɪɴɢ 💿 Fʀᴏᴍ 💕 Cʀᴇᴀᴛᴏʀ ❤ Pᴀᴠᴀɴ 😎 Fᴀꜱᴛᴇꜱᴛ 💌 Sᴇʀᴠᴇʀ...**",
+                    caption=f"💡 **Bʀᴏᴋᴇɴ Sᴛʀᴇᴀᴍɪɴɢ »** `{pos}`\n\n🏷 **Nᴀᴍᴇ :** [{songname}]({link})\n✨ **Gʀᴏᴜᴘ :** `{chat_id}`\n👨🏻‍💼 **Pʟᴀʏᴇʀ :** {m.from_user.mention()}\n\n❄ **Cʀᴇᴀᴛᴏʀ Pᴀᴠᴀɴ**",
                     reply_markup=keyboard,
                 )
             else:
@@ -154,7 +154,7 @@ async def play(c: Client, m: Message):
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                 await m.reply_photo(
                     photo=f"{IMG_2}",
-                    caption=f"💡 **Bʀᴏᴋᴇɴ Sᴛʀᴇᴀᴍɪɴɢ...**\n\n🏷 **Nᴀᴍᴇ :** [{songname}]({link})\n✨ **Gʀᴏᴜᴘ :** `{chat_id}`\n👨🏻‍💼 **Pʟᴀʏᴇʀ :** {requester}\n\n❄ **Nᴏᴡ 💥 Pʟᴀʏɪɴɢ 💿 Fʀᴏᴍ 💕 Cʀᴇᴀᴛᴏʀ ❤ Pᴀᴠᴀɴ 😎 Fᴀꜱᴛᴇꜱᴛ 💌 Sᴇʀᴠᴇʀ...**",
+                    caption=f"💡 **Bʀᴏᴋᴇɴ Sᴛʀᴇᴀᴍɪɴɢ...**\n\n🏷 **Nᴀᴍᴇ :** [{songname}]({link})\n✨ **Gʀᴏᴜᴘ :** `{chat_id}`\n👨🏻‍💼 **Pʟᴀʏᴇʀ :** {requester}\n\n❄ **Cʀᴇᴀᴛᴏʀ Pᴀᴠᴀɴ**",
                     reply_markup=keyboard,
                 )
              except Exception as e:
@@ -186,7 +186,7 @@ async def play(c: Client, m: Message):
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             await m.reply_photo(
                                 photo=f"{IMG_1}",
-                                caption=f"💡 **Bʀᴏᴋᴇɴ Sᴛʀᴇᴀᴍɪɴɢ »** `{pos}`\n\n🏷 **Nᴀᴍᴇ :** [{songname}]({url})\n✨ **Gʀᴏᴜᴘ :** `{chat_id}`\n👨🏻‍💼 **Pʟᴀʏᴇʀ :** {requester}\n\n❄ **Nᴏᴡ 💥 Pʟᴀʏɪɴɢ 💿 Fʀᴏᴍ 💕 Cʀᴇᴀᴛᴏʀ ❤ Pᴀᴠᴀɴ 😎 Fᴀꜱᴛᴇꜱᴛ 💌 Sᴇʀᴠᴇʀ...**",
+                                caption=f"💡 **Bʀᴏᴋᴇɴ Sᴛʀᴇᴀᴍɪɴɢ »** `{pos}`\n\n🏷 **Nᴀᴍᴇ :** [{songname}]({url})\n✨ **Gʀᴏᴜᴘ :** `{chat_id}`\n👨🏻‍💼 **Pʟᴀʏᴇʀ :** {requester}\n\n❄ **Cʀᴇᴀᴛᴏʀ  Pᴀᴠᴀɴ**",
                                 reply_markup=keyboard,
                             )
                         else:
@@ -203,7 +203,7 @@ async def play(c: Client, m: Message):
                                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                                 await m.reply_photo(
                                     photo=f"{IMG_2}",
-                                    caption=f"💡 **ꜱᴛʀᴇᴀᴍɪɴɢ...**\n\n🏷 **Nᴀᴍᴇ :** [{songname}]({url})\n✨ **Gʀᴏᴜᴘ :** `{chat_id}`\n👨🏻‍💼 **Pʟᴀʏᴇʀ :** {requester}\n\n❄ **Nᴏᴡ 💥 Pʟᴀʏɪɴɢ 💿 Fʀᴏᴍ 💕 Cʀᴇᴀᴛᴏʀ ❤ Pᴀᴠᴀɴ 😎 Fᴀꜱᴛᴇꜱᴛ 💌 Sᴇʀᴠᴇʀ...**",
+                                    caption=f"💡 **ꜱᴛʀᴇᴀᴍɪɴɢ...**\n\n🏷 **Nᴀᴍᴇ :** [{songname}]({url})\n✨ **Gʀᴏᴜᴘ :** `{chat_id}`\n👨🏻‍💼 **Pʟᴀʏᴇʀ :** {requester}\n\n❄ **Cʀᴇᴀᴛᴏʀ Pᴀᴠᴀɴ**",
                                     reply_markup=keyboard,
                                 )
                             except Exception as ep:
@@ -236,7 +236,7 @@ async def play(c: Client, m: Message):
                         )
                         await m.reply_photo(
                             photo=f"{IMG_1}",
-                            caption=f"💡 **Bʀᴏᴋᴇɴ Sᴛʀᴇᴀᴍɪɴɢ »** `{pos}`\n\n🏷 **Nᴀᴍᴇ :** [{songname}]({url})\n✨ **Gʀᴏᴜᴘ :** `{chat_id}`\n👨🏻‍💼 **Pʟᴀʏᴇʀ :** {requester}\n\n❄ **Nᴏᴡ 💥 Pʟᴀʏɪɴɢ 💿 Fʀᴏᴍ 💕 Cʀᴇᴀᴛᴏʀ ❤ Pᴀᴠᴀɴ 😎 Fᴀꜱᴛᴇꜱᴛ 💌 Sᴇʀᴠᴇʀ...**",
+                            caption=f"💡 **Bʀᴏᴋᴇɴ Sᴛʀᴇᴀᴍɪɴɢ »** `{pos}`\n\n🏷 **Nᴀᴍᴇ :** [{songname}]({url})\n✨ **Gʀᴏᴜᴘ :** `{chat_id}`\n👨🏻‍💼 **Pʟᴀʏᴇʀ :** {requester}\n\n❄ **Cʀᴇᴀᴛᴏʀ Pᴀᴠᴀɴ**",
                             reply_markup=keyboard,
                         )
                     else:
@@ -253,7 +253,7 @@ async def play(c: Client, m: Message):
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             await m.reply_photo(
                                 photo=f"{IMG_2}",
-                                caption=f"💡 **Bʀᴏᴋᴇɴ Sᴛʀᴇᴀᴍɪɴɢ...**\n\n🏷 **Nᴀᴍᴇ :** [{songname}]({url})\n✨ **Gʀᴏᴜᴘ:** `{chat_id}`\n👨🏻‍💼 **Pʟᴀʏᴇʀ :** {requester}\n\n❄ **Nᴏᴡ 💥 Pʟᴀʏɪɴɢ 💿 Fʀᴏᴍ 💕 Cʀᴇᴀᴛᴏʀ ❤ Pᴀᴠᴀɴ 😎 Fᴀꜱᴛᴇꜱᴛ 💌 Sᴇʀᴠᴇʀ...**",
+                                caption=f"💡 **Bʀᴏᴋᴇɴ Sᴛʀᴇᴀᴍɪɴɢ...**\n\n🏷 **Nᴀᴍᴇ :** [{songname}]({url})\n✨ **Gʀᴏᴜᴘ :** `{chat_id}`\n👨🏻‍💼 **Pʟᴀʏᴇʀ :** {requester}\n\n❄ **Cʀᴇᴀᴛᴏʀ Pᴀᴠᴀɴ**",
                                 reply_markup=keyboard,
                             )
                         except Exception as ep:
@@ -353,7 +353,7 @@ async def stream(c: Client, m: Message):
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                 await m.reply_photo(
                     photo=f"{IMG_1}",
-                    caption=f"💡 **Bʀᴏᴋᴇɴ Sᴛʀᴇᴀᴍɪɴɢ »** `{pos}`\n\n💭 **Chat:** `{chat_id}`\n🎧 **Request by:** {requester}\n\n❄ **Pʟᴀʏɪɴɢ 💿 Fʀᴏᴍ 💕 Cʀᴇᴀᴛᴏʀ ✌ Pᴀᴠᴀɴ 😎 Sᴇʀᴠᴇʀ...**",
+                    caption=f"💡 **Bʀᴏᴋᴇɴ Sᴛʀᴇᴀᴍɪɴɢ »** `{pos}`\n\n💭 **Chat:** `{chat_id}`\n🎧 **Request by:** {requester}\n\n❄ **Cʀᴇᴀᴛᴏʀ Pᴀᴠᴀɴ**",
                     reply_markup=keyboard,
                 )
             else:
