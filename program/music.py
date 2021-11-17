@@ -71,7 +71,7 @@ async def play(c: Client, m: Message):
     a = await c.get_chat_member(chat_id, aing.id)
     if a.status != "administrator":
         await m.reply_text(
-            f"💡 To use me, I need to be an **Administrator** with the following **permissions**:\n\n» ❌ __Delete messages__\n» ❌ __Restrict users__\n» ❌ __Add users__\n» ❌ __Manage video chat__\n\nData is **updated** automatically after you **promote me**"
+            f"💡 To use me, I need to be an **Administrator** with the following **permissions**:\n\n» ❌ __Delete messages__\n» ❌ __Add users__\n» ❌ __Manage video chat__\n\nData is **updated** automatically after you **promote me**"
         )
         return
     if not a.can_manage_voice_chats:
@@ -86,9 +86,6 @@ async def play(c: Client, m: Message):
         return
     if not a.can_invite_users:
         await m.reply_text("missing required permission:" + "\n\n» ❌ __Add users__")
-        return
-    if not a.can_restrict_members:
-        await m.reply_text("missing required permission:" + "\n\n» ❌ __Restrict users__")
         return
     try:
         ubot = await user.get_me()
@@ -284,7 +281,7 @@ async def stream(c: Client, m: Message):
     a = await c.get_chat_member(chat_id, aing.id)
     if a.status != "administrator":
         await m.reply_text(
-            f"💡 To use me, I need to be an **Administrator** with the following **permissions**:\n\n» ❌ __Delete messages__\n» ❌ __Restrict users__\n» ❌ __Add users__\n» ❌ __Manage video chat__\n\nData is **updated** automatically after you **promote me**"
+            f"💡 To use me, I need to be an **Administrator** with the following **permissions**:\n\n» ❌ __Delete messages__\n» ❌ __Add users__\n» ❌ __Manage video chat__\n\nData is **updated** automatically after you **promote me**"
         )
         return
     if not a.can_manage_voice_chats:
@@ -299,9 +296,6 @@ async def stream(c: Client, m: Message):
         return
     if not a.can_invite_users:
         await m.reply_text("missing required permission:" + "\n\n» ❌ __Add users__")
-        return
-    if not a.can_restrict_members:
-        await m.reply_text("missing required permission:" + "\n\n» ❌ __Restrict users__")
         return
     try:
         ubot = await user.get_me()
