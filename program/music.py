@@ -62,7 +62,7 @@ async def play(c: Client, m: Message):
             ], 
             [
                     InlineKeyboardButton(
-                        "👨🏻‍💻 ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ 👨🏻‍💻", url="https://t.me/itsCrePavan"
+                        "• Cʀᴇᴀᴛᴏʀ", url="https://t.me/itsCrePavan"
                     )
                 ],
         ]
