@@ -57,9 +57,14 @@ async def play(c: Client, m: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="• Mᴇɴᴜ", callback_data="cbmenu"),
-                InlineKeyboardButton(text="• Jᴏɪɴ", url="https://t.me/itsCrePavan"),
-            ], 
+                      InlineKeyboardButton("⏹", callback_data="cbstop"),
+                      InlineKeyboardButton("⏸", callback_data="cbpause"),
+                      InlineKeyboardButton("▶️", callback_data="cbresume"),
+                  ],[
+                      InlineKeyboardButton("🔇", callback_data="cbmute"),
+                      InlineKeyboardButton("🔊", callback_data="cbunmute"),
+                  ],[
+                      InlineKeyboardButton("🗑 Cʟᴏꜱᴇ", callback_data="cls")], 
         ]
     )
     if m.sender_chat:
