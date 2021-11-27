@@ -80,15 +80,17 @@ async def alive(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("✨ Group", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/CreatorPavanSupport"),
                 InlineKeyboardButton(
-                    "📣 Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/CreatorPavanUpdates"
                 ),
+            ],[
+                InlineKeyboardButton("ᴀʟʟ ɪɴꜰᴏ ʜᴇʀᴇ", url=f"https://t.me/CreatorPavan"),
             ]
         ]
     )
 
-    alive = f"**Hello {message.from_user.mention()}, i'm {BOT_NAME}**\n\n✨ Bot is working normally\n🍀 My Master: [{ALIVE_NAME}](https://t.me/{OWNER_NAME})\n✨ Bot Version: `v{__version__}`\n🍀 Pyrogram Version: `{pyrover}`\n✨ Python Version: `{__python_version__}`\n🍀 PyTgCalls version: `{pytover.__version__}`\n✨ Uptime Status: `{uptime}`\n\n**Thanks for Adding me here, for playing video & music on your Group's video chat** ❤"
+    alive = f"**ʜᴇᴍʟᴏ {message.from_user.mention()}, ɪ ᴀᴍ ʙʀᴏᴋᴇɴ.**\n\n🌸 ᴡᴏʀᴋɪɴɢ ɴᴏʀᴍᴀʟʟʏ\n🙋🏻 ᴏᴘ ᴍᴀꜱᴛᴇʀ : [𝗖𝗿𝗲𝗮𝘁𝗼𝗿 𝗣𝗮𝘃𝗮𝗻](https://t.me/Creator_Pavan)\n💞 ᴠᴇʀꜱɪᴏɴ : `v{__version__}`\n🍀 Pyrogram Version: `{pyrover}`\n✨ Python Version: `{__python_version__}`\n🍀 PyTgCalls version: `{pytover.__version__}`\n✨ Uptime Status: `{uptime}`\n\n**Thanks for Adding me here, for playing video & music on your Group's video chat** ❤"
 
     await message.reply_photo(
         photo=f"{ALIVE_IMG}",
@@ -116,18 +118,6 @@ async def get_uptime(client: Client, message: Message):
         f"• **ꜱᴛᴀʀᴛ ᴀᴛ :** `{START_TIME_ISO}`"
     )
 
-@Client.on_message(filters.command("repo") & ~filters.private & ~filters.channel)
-async def gstart(_, message: Message):
-      await message.reply_text("""**» ʜᴇʀᴇ ɪꜱ ᴀ ʀᴇᴘᴏ**""",
-      reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "𝗖𝗹𝗶𝗰𝗸 𝗛𝗲𝗿𝗲", url="https://t.me/itsCrePavan")
-                ]
-            ]
-        )
-   )
 @Client.on_message(filters.command("pavan") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
       await message.reply_text("""**ᴛʜɪꜱ ɪꜱ ᴛʜᴇ ʙʀᴏᴋᴇɴ ᴡʜɪᴄʜ ɪꜱ ꜱᴘᴇᴄɪꜰɪᴄᴀʟʟʏ ᴅᴇꜱɪɢɴᴇᴅ ʙʏ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ.**""",
@@ -136,18 +126,6 @@ async def gstart(_, message: Message):
                 [
                     InlineKeyboardButton(
                         "𝗔𝗯𝗼𝘂𝘁", url="https://t.me/itsCrePavan")
-                ]
-            ]
-        )
-   )
-@Client.on_message(filters.command("repo") & ~filters.private & ~filters.channel)
-async def gstart(_, message: Message):
-      await message.reply_text("""**» ʜᴇʀᴇ ɪꜱ ᴀ ʀᴇᴘᴏ**""",
-      reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "𝗖𝗹𝗶𝗰𝗸 𝗛𝗲𝗿𝗲", url="https://t.me/itsCrePavan")
                 ]
             ]
         )
