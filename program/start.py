@@ -52,7 +52,7 @@ async def _human_time_duration(seconds):
 )
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        f"""👋 **Hᴇᴍʟᴏ {message.from_user.mention()}**\n\n
+        f"""👋 **Hᴇᴍʟᴏ {message.from_user.mention()}**\n
 𝗧𝗵𝗶𝘀 𝗶𝘀 𝘁𝗵𝗲 𝗕𝗿𝗼𝗸𝗲𝗻 𝟮.𝟬...!**
 ┏━━━━━━━━━━━━━━━━━┓
 ┣» ᴏᴘ ᴍᴜꜱɪᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ. 
@@ -66,17 +66,17 @@ async def start_(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("𝗖𝗢𝗠𝗠𝗔𝗡𝗗 𝗟𝗜𝗦𝗧", callback_data="cbcmds"),
+                    InlineKeyboardButton("ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ", callback_data="cbcmds"),
                 ],[
                     InlineKeyboardButton(
-                        "𝗦𝗨𝗣𝗣𝗢𝗥𝗧", url=f"https://t.me/creatorpavansupport"
+                        "ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/creatorpavansupport"
                     ),
                     InlineKeyboardButton(
-                        "𝗨𝗣𝗗𝗔𝗧𝗘𝗦", url=f"https://t.me/CreatorPavanUpdates"
+                        "ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/CreatorPavanUpdates"
                     ),
                 ],[
                     InlineKeyboardButton(
-                        "😀  𝗔𝗗𝗗 𝗠𝗘  😀",
+                        "😀 ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ 😀",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
