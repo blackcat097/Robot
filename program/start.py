@@ -76,7 +76,7 @@ async def start_(client: Client, message: Message):
                     ),
                 ],[
                     InlineKeyboardButton(
-                        "😀 ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ 😀",
+                        "🙂 ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ 🙂",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
