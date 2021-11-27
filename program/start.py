@@ -52,7 +52,7 @@ async def _human_time_duration(seconds):
 )
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        f"""**ʜᴇᴍʟᴏ  {message.from_user.mention()}**\n\n𝗧𝗵𝗶𝘀 𝗶𝘀 𝘁𝗵𝗲 𝗕𝗿𝗼𝗸𝗲𝗻 𝟮.𝟬...!\n\n**┏━━━━━━━━━━━━━━━━━┓
+        f"""👋 **ʜᴇᴍʟᴏ  {message.from_user.mention()}**\n𝗧𝗵𝗶𝘀 𝗶𝘀 𝘁𝗵𝗲 𝗕𝗿𝗼𝗸𝗲𝗻 𝟮.𝟬...!\n\n**┏━━━━━━━━━━━━━━━━━┓
 ┣» ᴏᴘ ᴍᴜꜱɪᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ. 
 ┣» ʜɪɢʜ ǫᴜᴀʟɪᴛʏ ᴍᴜꜱɪᴄ.
 ┣» ᴠɪᴅᴇᴏ ᴘʟᴀʏ ꜱᴜᴘᴘᴏʀᴛᴇᴅ.
@@ -64,6 +64,15 @@ async def start_(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
+                    InlineKeyboardButton("𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗟𝗶𝘀𝘁", callback_data="cbcmds"),
+                ],[
+                    InlineKeyboardButton(
+                        "𝗦𝘂𝗽𝗽𝗼𝗿𝘁", url=f"https://t.me/{GROUP_SUPPORT}"
+                    ),
+                    InlineKeyboardButton(
+                        "𝗨𝗽𝗱𝗮𝘁𝗲𝘀", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    ),
+                ],[
                     InlineKeyboardButton(
                         "😀  𝗔𝗗𝗗 𝗠𝗘  😀",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
