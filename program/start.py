@@ -141,7 +141,7 @@ async def gstart(_, message: Message):
    )
 @Client.on_message(filters.command("pavan") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""**ᴛʜɪꜱ ɪꜱ ᴛʜᴇ ʙʀᴏᴋᴇɴ ᴡʜɪᴄʜ ɪꜱ ꜱᴘᴇᴄɪꜰɪᴄᴀʟʟʏ ᴅᴇꜱɪɢɴᴇᴅ ʙʏ [ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ](https://t.me/Creator_Pavan)**""",
+      await message.reply_text("""**ᴛʜɪꜱ ɪꜱ ᴛʜᴇ ʙʀᴏᴋᴇɴ ᴡʜɪᴄʜ ɪꜱ ꜱᴘᴇᴄɪꜰɪᴄᴀʟʟʏ ᴅᴇꜱɪɢɴᴇᴅ ʙʏ 『ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ』**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
