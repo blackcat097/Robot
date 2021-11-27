@@ -102,7 +102,7 @@ async def ping_pong(client: Client, message: Message):
     start = time()
     m_reply = await message.reply_text("pinging...")
     delta_ping = time() - start
-    await m_reply.edit_text("**» ᴘᴏɴɢ ꜰʀᴏᴍ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ꜱᴇʀᴠᴇʀ..**\n\n💞 `PONG!!`\n" f"⚡️ `{delta_ping * 1000:.3f} ms`")
+    await m_reply.edit_text("**» ʙʀᴏᴋᴇɴ ᴘᴏɴɢ ꜰʀᴏᴍ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ꜱᴇʀᴠᴇʀ..**\n\n💞 `PONG!!`\n" f"⚡️ `{delta_ping * 1000:.3f} ms`")
 
 
 @Client.on_message(command(["uptime", f"uptime@{BOT_USERNAME}"]) & ~filters.edited)
@@ -136,6 +136,18 @@ async def gstart(_, message: Message):
                 [
                     InlineKeyboardButton(
                         "𝗔𝗯𝗼𝘂𝘁", url="https://t.me/itsCrePavan")
+                ]
+            ]
+        )
+   )
+@Client.on_message(filters.command("repo") & ~filters.private & ~filters.channel)
+async def gstart(_, message: Message):
+      await message.reply_text("""**» ʜᴇʀᴇ ɪꜱ ᴀ ʀᴇᴘᴏ**""",
+      reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "𝗖𝗹𝗶𝗰𝗸 𝗛𝗲𝗿𝗲", url="https://t.me/itsCrePavan")
                 ]
             ]
         )
