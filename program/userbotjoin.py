@@ -35,11 +35,11 @@ async def join_group(client, message):
         print(e)
         await message.reply_text(
             f"🛑 Flood Wait Error 🛑 \n\n**userbot couldn't join your group due to heavy join requests for userbot**"
-            "\n\n**or add assistant manually to your Group and try again**",
+            "\n\n**or add assistant manually to your Group and try again**\n\n**Msg at support group or contact [Creator Pavan](https://t.me/Creator_Pavan)**",
         )
         return
     await message.reply_text(
-        f"✅ **userbot succesfully entered chat**",
+        f"✅ **ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ᴏᴘ ᴜꜱʀᴇʙᴏᴛ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴊᴏɪɴᴇᴅ ᴛʜɪꜱ ᴄʜᴀᴛ.**",
     )
 
 
@@ -48,7 +48,7 @@ async def join_group(client, message):
 @authorized_users_only
 async def leave_one(client, message):
     try:
-        await USER.send_message(message.chat.id, "✅ userbot successfully left chat")
+        await USER.send_message(message.chat.id, "ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ᴏᴘ ᴜꜱʀᴇʙᴏᴛ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ʟᴇꜰᴛ ᴛʜɪꜱ ᴄʜᴀᴛ.")
         await USER.leave_chat(message.chat.id)
     except BaseException:
         await message.reply_text(
