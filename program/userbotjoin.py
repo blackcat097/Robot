@@ -34,8 +34,8 @@ async def join_group(client, message):
     except Exception as e:
         print(e)
         await message.reply_text(
-            f"🛑 Flood Wait Error 🛑 \n\n**userbot couldn't join your group due to heavy join requests for userbot**"
-            "\n\n**or add assistant manually to your Group and try again**\n\n**Msg at support group or contact [Creator Pavan](https://t.me/Creator_Pavan)**",
+            f"🛑 𝗙𝗹𝗼𝗼𝗱 𝗪𝗮𝗶𝘁 𝗘𝗿𝗿𝗼𝗿 🛑 \n\n**ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ᴏᴘ ᴜꜱᴇʀʙᴏᴛ ᴄᴀɴ'ᴛ ᴊᴏɪɴ ᴜʀ ɢʀᴏᴜᴘ ᴅᴜᴇ ᴛᴏ ʜᴇᴀᴠʏ ᴊᴏɪɴ ʀᴇQᴜᴇꜱᴛ.**"
+            "\n\n**ᴀᴅᴅ ᴀꜱꜱɪꜱᴛᴀɴᴛ ᴍᴀɴᴜᴀʟʟʏ ɪɴ ᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ.**\n\n**ᴏʀ ᴍꜱɢ ᴀᴛ : [𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽](https://t.me/CreatorPavanSupport)**\n𝗖𝗼𝗻𝘁𝗮𝗰𝘁 𝗖𝗿𝗲𝗮𝘁𝗼𝗿 𝗣𝗮𝘃𝗮𝗻",
         )
         return
     await message.reply_text(
