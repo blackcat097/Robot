@@ -72,7 +72,7 @@ async def start_(client: Client, message: Message):
                         "ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/creatorpavansupport"
                     ),
                     InlineKeyboardButton(
-                        "ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/CreatorPavanUpdates"
+                        "ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/theCreatorPavan"
                     ),
                 ],[
                     InlineKeyboardButton(
@@ -99,15 +99,15 @@ async def alive(client: Client, message: Message):
             [
                 InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/CreatorPavanSupport"),
                 InlineKeyboardButton(
-                    "ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/CreatorPavanUpdates"
+                    "ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/theCreatorPavan"
                 ),
             ],[
-                InlineKeyboardButton("ᴀʟʟ ɪɴꜰᴏ ʜᴇʀᴇ", url=f"https://t.me/CreatorPavan"),
+                InlineKeyboardButton("ᴀʟʟ ɪɴꜰᴏ ʜᴇʀᴇ", url=f"https://t.me/CreatorPavanNetwork"),
             ]
         ]
     )
 
-    alive = f"**ʜᴇᴍʟᴏ {message.from_user.mention()}, ᴛʜɪꜱ ɪꜱ ᴛʜᴇ ʙʀᴏᴋᴇɴ.**\n\n» ᴡᴏʀᴋɪɴɢ ɴᴏʀᴍᴀʟʟʏ\n» ᴏᴘ ᴍᴀꜱᴛᴇʀ : [𝗖𝗿𝗲𝗮𝘁𝗼𝗿 𝗣𝗮𝘃𝗮𝗻](https://t.me/Creator_Pavan)\n» ʙᴏᴛ ᴠᴇʀꜱɪᴏɴ : `v{__version__}`\n» ᴘʏʀᴏ ᴠᴇʀꜱɪᴏɴ : `{pyrover}`\n» ᴘʏᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ : `{__python_version__}`\n» ᴘʏᴛɢᴄᴀʟʟꜱ : `{pytover.__version__}`\n» ᴜᴘᴛɪᴍᴇ : `{uptime}`\n\n**ᴛʜɪꜱ ɪꜱ ᴛʜᴇ ᴏᴘ ᴍᴜꜱɪᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ ᴅᴇꜱɪɢɴᴇᴅ ᴀɴᴅ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ, ᴛʜᴀɴᴋᴜ ᴠᴇʀʏ ᴍᴜᴄʜ ꜰᴏʀ ᴀᴅᴅɪɴɢ ʜᴇʀᴇ..**"
+    alive = f"**ʜᴇᴍʟᴏ {message.from_user.mention()}, ᴛʜɪꜱ ɪꜱ ᴛʜᴇ ʙʀᴏᴋᴇɴ.**\n\n» ᴡᴏʀᴋɪɴɢ ɴᴏʀᴍᴀʟʟʏ\n» ᴏᴘ ᴍᴀꜱᴛᴇʀ : [𝗖𝗿𝗲𝗮𝘁𝗼𝗿 𝗣𝗮𝘃𝗮𝗻](https://t.me/Creator_Pavan)\n» ʙᴏᴛ ᴠᴇʀꜱɪᴏɴ : `v{__version__}`\n» ᴘʏʀᴏ ᴠᴇʀꜱɪᴏɴ : `{pyrover}`\n» ᴘʏᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ : `{__python_version__}`\n» ᴘʏᴛɢᴄᴀʟʟꜱ : `{pytover.__version__}`\n» ᴜᴘᴛɪᴍᴇ : `{uptime}`\n\n**ᴛʜɪꜱ ɪꜱ ᴛʜᴇ ᴏᴘ ᴍᴜꜱɪᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ ᴅᴇꜱɪɢɴᴇᴅ ᴀɴᴅ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ, ᴛʜᴀɴᴋᴜ ᴠᴇʀʏ ᴍᴜᴄʜ ꜰᴏʀ ᴀᴅᴅɪɴɢ ʜᴇʀᴇ..**\n\n© @CreatorPavanNetwork"
 
     await message.reply_photo(
         photo=f"{ALIVE_IMG}",
@@ -130,7 +130,7 @@ async def get_uptime(client: Client, message: Message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await message.reply_text(
-        "🏷️ **ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ᴏᴘ ʙᴏᴛ ꜱᴛᴀᴛᴜꜱ.**\n\n"
+        "**ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ᴏᴘ ʙᴏᴛ ꜱᴛᴀᴛᴜꜱ.**\n\n"
         f"• **ᴜᴘᴛɪᴍᴇ :** `{uptime}`\n"
         f"• **ꜱᴛᴀʀᴛ ᴀᴛ :** `{START_TIME_ISO}`"
     )
@@ -142,7 +142,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "ᴀʟʟ ɪɴꜰᴏ ʜᴇʀᴇ", url="https://t.me/CreatorPavan")
+                        "ᴀʟʟ ɪɴꜰᴏ ʜᴇʀᴇ", url="https://t.me/CreatorPavanNetwork")
                 ]
             ]
         )
