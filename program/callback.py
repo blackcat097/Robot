@@ -35,7 +35,7 @@ async def cbstart(_, query: CallbackQuery):
                         "ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/creatorpavansupport"
                     ),
                     InlineKeyboardButton(
-                        "ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/CreatorPavanUpdates"
+                        "ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/theCreatorPavan"
                     ),
                 ],[
                     InlineKeyboardButton(
@@ -79,6 +79,8 @@ async def cbcmds(_, query: CallbackQuery):
 
 » ꜰᴏʀ ᴋɴᴏᴡɪɴɢ ᴀ ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ ᴏꜰ ʙʀᴏᴋᴇɴ ᴊᴜꜱᴛ ᴘʀᴇꜱꜱ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ᴀɴᴅ ʀᴇᴀᴅ ᴄᴏᴍᴍᴀɴᴅꜱ ᴇxᴘʟᴀɴᴀᴛɪᴏɴ.
 
+© @CreatorPavanNetwork
+
 **ᴛʜɪꜱ ᴏᴘ ʙᴏᴛ ɪꜱ ꜱᴘᴇᴄɪᴀʟʟʏ ᴅᴇꜱɪɢɴᴇᴅ ʙʏ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ.**""",
         reply_markup=InlineKeyboardMarkup(
             [
@@ -113,6 +115,8 @@ async def cbbasic(_, query: CallbackQuery):
 » /uptime - ꜱʜᴏᴡ ᴛʜᴇ ʙᴏᴛ ᴜᴘᴛɪᴍᴇ ꜱᴛᴀᴛᴜꜱ 
 » /alive - ꜱʜᴏᴡ ᴛʜᴇ ʙᴏᴛ ᴀʟɪᴠᴇ ɪɴꜰᴏ [ɪɴ ɢʀᴏᴜᴘ]
 
+© @CreatorPavanNetwork
+
 **ᴛʜɪꜱ ᴏᴘ ʙᴏᴛ ɪꜱ ꜱᴘᴇᴄɪᴀʟʟʏ ᴅᴇꜱɪɢɴᴇᴅ ʙʏ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ.**""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 ʙʀᴏᴋᴇɴ ʙᴀᴄᴋ", callback_data="cbcmds")]]
@@ -136,6 +140,8 @@ async def cbadmin(_, query: CallbackQuery):
 » /userbotjoin - ɪɴᴠɪᴛᴇ ᴛʜᴇ ᴜꜱᴇʀʙᴏᴛ ᴛᴏ ᴊᴏɪɴ ɢʀᴏᴜᴘ 
 » /userbotleave - ᴏʀᴅᴇʀ ᴜꜱᴇʀʙᴏᴛ ᴛᴏ ʟᴇᴀᴠᴇ ꜰʀᴏᴍ ɢʀᴏᴜᴘ
 
+© @CreatorPavanNetwork
+
 **ᴛʜɪꜱ ᴏᴘ ʙᴏᴛ ɪꜱ ꜱᴘᴇᴄɪᴀʟʟʏ ᴅᴇꜱɪɢɴᴇᴅ ʙʏ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ.**""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 ʙʀᴏᴋᴇɴ ʙᴀᴄᴋ", callback_data="cbcmds")]]
@@ -154,6 +160,8 @@ async def cbsudo(_, query: CallbackQuery):
 » /restart - ʀᴇꜱᴛᴀʀᴛ ʏᴏᴜʀ ʙᴏᴛ 
 » /leaveall - ᴏʀᴅᴇʀ ᴜꜱᴇʀʙᴏᴛ ᴛᴏ ʟᴇᴀᴠᴇ ꜰʀᴏᴍ ᴀʟʟ ɢʀᴏᴜᴘ
 
+© @CreatorPavanNetwork
+
 **ᴛʜɪꜱ ᴏᴘ ʙᴏᴛ ɪꜱ ꜱᴘᴇᴄɪᴀʟʟʏ ᴅᴇꜱɪɢɴᴇᴅ ʙʏ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ.**""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 ʙʀᴏᴋᴇɴ ʙᴀᴄᴋ", callback_data="cbcmds")]]
@@ -171,7 +179,7 @@ async def cbmenu(_, query: CallbackQuery):
     chat_id = query.message.chat.id
     if chat_id in QUEUE:
           await query.edit_message_text(
-              f"⚙️ **ʙʀᴏᴋᴇɴ ꜱᴇᴛᴛɪɴɢꜱ ꜰᴏʀ** {query.message.chat.title}\n\n⏸ : ʙʀᴏᴋᴇɴ ᴘᴀᴜꜱᴇ\n▶️ : ʙʀᴏᴋᴇɴ ʀᴇꜱᴜᴍᴇ\n🔇 : ʙʀᴏᴋᴇɴ ᴍᴜᴛᴇ\n🔊 : ʙʀᴏᴋᴇɴ ᴜɴᴍᴜᴛᴇ\n⏹ : ʙʀᴏᴋᴇɴ ꜱᴛʀᴇᴀᴍ ꜱᴛᴏᴘ",
+              f"⚙️ **ʙʀᴏᴋᴇɴ ꜱᴇᴛᴛɪɴɢꜱ ꜰᴏʀ** {query.message.chat.title}\n\n⏸ : ʙʀᴏᴋᴇɴ ᴘᴀᴜꜱᴇ\n▶️ : ʙʀᴏᴋᴇɴ ʀᴇꜱᴜᴍᴇ\n🔇 : ʙʀᴏᴋᴇɴ ᴍᴜᴛᴇ\n🔊 : ʙʀᴏᴋᴇɴ ᴜɴᴍᴜᴛᴇ\n⏹ : ʙʀᴏᴋᴇɴ ꜱᴛʀᴇᴀᴍ ꜱᴛᴏᴘ\n\n© @TheCreatorPavan",
               reply_markup=InlineKeyboardMarkup(
                   [[
                       InlineKeyboardButton("⏹", callback_data="cbstop"),
