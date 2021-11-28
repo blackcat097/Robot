@@ -35,7 +35,7 @@ async def join_group(client, message):
         print(e)
         await message.reply_text(
             f"🛑 𝗙𝗹𝗼𝗼𝗱 𝗪𝗮𝗶𝘁 𝗘𝗿𝗿𝗼𝗿 🛑 \n\n**ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ᴏᴘ ᴜꜱᴇʀʙᴏᴛ ᴄᴀɴ'ᴛ ᴊᴏɪɴ ᴜʀ ɢʀᴏᴜᴘ ᴅᴜᴇ ᴛᴏ ʜᴇᴀᴠʏ ᴊᴏɪɴ ʀᴇQᴜᴇꜱᴛ.**"
-            "\n\n**ᴀᴅᴅ ᴀꜱꜱɪꜱᴛᴀɴᴛ ᴍᴀɴᴜᴀʟʟʏ ɪɴ ᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ.**\n\n**ᴜꜱᴇʀʙᴏᴛ : ** @CrepanAssistant\n\n**ᴍꜱɢ ᴀᴛ : @CreatorPavanSupport**\n\n**ᴏʀ ᴄᴏɴᴛᴀᴄᴛ ᴏᴘ ᴍᴀꜱᴛᴇʀ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ.**",
+            "\n\n**ᴀᴅᴅ ᴀꜱꜱɪꜱᴛᴀɴᴛ ᴍᴀɴᴜᴀʟʟʏ ɪɴ ᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ.**\n\n**ᴀꜱꜱɪꜱᴛᴀɴᴛ :  @CrepanAssistant**\n\n**ᴍꜱɢ ᴀᴛ :**\n\n**@CreatorPavanSupport**\n\n**ᴏʀ ᴄᴏɴᴛᴀᴄᴛ ᴏᴘ ᴍᴀꜱᴛᴇʀ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ.**",
         )
         return
     await message.reply_text(
