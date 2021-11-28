@@ -57,9 +57,7 @@ async def play(c: Client, m: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="⚙", callback_data="cbmenu"),
-                InlineKeyboardButton(text="❤️", url=f"https://t.me/itsCrePavan/14"),
-                InlineKeyboardButton(text="👨🏻‍💻", url=f"https://t.me/Creator_Pavan"),
+                InlineKeyboardButton(text="⚙ ꜱᴇᴛᴛɪɴɢꜱ", callback_data="cbmenu"),
             ],[
                 InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/itsCrePavan"),
                 InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/itsCrePavan"),
