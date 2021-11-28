@@ -76,7 +76,7 @@ async def start_(client: Client, message: Message):
                     ),
                 ],[
                     InlineKeyboardButton(
-                        "🙂 ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ 🙂",
+                        "🙂 ᴀᴅᴅ ʙʀᴏᴋᴇɴ ʙᴀʙʏ 🙂",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
@@ -137,12 +137,12 @@ async def get_uptime(client: Client, message: Message):
 
 @Client.on_message(filters.command("pavan") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""**ᴛʜɪꜱ ɪꜱ ᴛʜᴇ ʙʀᴏᴋᴇɴ ᴡʜɪᴄʜ ɪꜱ ꜱᴘᴇᴄɪꜰɪᴄᴀʟʟʏ ᴅᴇꜱɪɢɴᴇᴅ ʙʏ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ.**""",
+      await message.reply_text("""**ᴛʜɪꜱ ɪꜱ ᴛʜᴇ ᴏᴘ ʙᴏᴛ ᴡʜɪᴄʜ ɪꜱ ꜱᴘᴇᴄɪꜰɪᴄᴀʟʟʏ ᴅᴇꜱɪɢɴᴇᴅ ʙʏ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ.**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "𝗔𝗯𝗼𝘂𝘁", url="https://t.me/itsCrePavan")
+                        "𝗔𝗯𝗼𝘂𝘁", url="https://t.me/CreatorPavan")
                 ]
             ]
         )
