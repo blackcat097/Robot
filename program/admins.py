@@ -15,12 +15,12 @@ from pyrogram.types import (
 
 
 bttn = InlineKeyboardMarkup(
-    [[InlineKeyboardButton("🔙 Go Back", callback_data="cbmenu")]]
+    [[InlineKeyboardButton("🔙 ʙʀᴏᴋᴇɴ ʙᴀᴄᴋ", callback_data="cbmenu")]]
 )
 
 
 bcl = InlineKeyboardMarkup(
-    [[InlineKeyboardButton("🗑 Close", callback_data="cls")]]
+    [[InlineKeyboardButton("🗑 ᴄʟᴏꜱᴇ", callback_data="cls")]]
 )
 
 
@@ -34,7 +34,7 @@ async def update_admin(client, message):
         new_admins.append(u.user.id)
     admins[message.chat.id] = new_admins
     await message.reply_text(
-        "**𝗗𝗮𝘁𝗮 𝗥𝗲𝗹𝗼𝗮𝗱𝗲𝗱..!**"
+        "**» ᴅᴀᴛᴀ ʀᴇʟᴏᴀᴅᴇᴅ..!**"
     )
 
 
@@ -59,7 +59,7 @@ async def skip(client, m: Message):
     if len(m.command) < 2:
         op = await skip_current_song(chat_id)
         if op == 0:
-            await m.reply("**𝗡𝗼𝘁𝗵𝗶𝗻𝗴 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 𝗕𝗮𝗯𝘆** 🙂")
+            await m.reply("**ɴᴏᴛʜɪɴɢ ᴘʟᴀʏɪɴɢ ʙᴀʙʏ** 🙂")
         elif op == 1:
             await m.reply("✅ __Queues__ **is empty.**\n\n**• userbot leaving voice chat**")
         elif op == 2:
@@ -99,11 +99,11 @@ async def stop(client, m: Message):
         try:
             await call_py.leave_group_call(chat_id)
             clear_queue(chat_id)
-            await m.reply("**𝗕𝗿𝗼𝗸𝗲𝗻 𝗦𝘁𝗿𝗲𝗮𝗺 𝗘𝗻𝗱𝗲𝗱..!**")
+            await m.reply("**» ʙʀᴏᴋᴇɴ ꜱᴛʀᴇᴀᴍ ᴇɴᴅᴇᴅ**")
         except Exception as e:
             await m.reply(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply("**𝗡𝗼𝘁𝗵𝗶𝗻𝗴 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 𝗕𝗮𝗯𝘆** 🙂")
+        await m.reply("**ɴᴏᴛʜɪɴɢ ᴘʟᴀʏɪɴɢ ʙᴀʙʏ** 🙂")
 
 
 @Client.on_message(
@@ -139,7 +139,7 @@ async def resume(client, m: Message):
         except Exception as e:
             await m.reply(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply("**𝗡𝗼𝘁𝗵𝗶𝗻𝗴 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 𝗕𝗮𝗯𝘆** 🙂")
+        await m.reply("**ɴᴏᴛʜɪɴɢ ᴘʟᴀʏɪɴɢ ʙᴀʙʏ** 🙂")
 
 
 @Client.on_message(
@@ -157,7 +157,7 @@ async def mute(client, m: Message):
         except Exception as e:
             await m.reply(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply("**𝗡𝗼𝘁𝗵𝗶𝗻𝗴 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 𝗕𝗮𝗯𝘆** 🙂")
+        await m.reply("**ɴᴏᴛʜɪɴɢ ᴘʟᴀʏɪɴɢ ʙᴀʙʏ** 🙂")
 
 
 @Client.on_message(
@@ -175,7 +175,7 @@ async def unmute(client, m: Message):
         except Exception as e:
             await m.reply(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply("**𝗡𝗼𝘁𝗵𝗶𝗻𝗴 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 𝗕𝗮𝗯𝘆** 🙂")
+        await m.reply("**ɴᴏᴛʜɪɴɢ ᴘʟᴀʏɪɴɢ ʙᴀʙʏ** 🙂")
 
 
 @Client.on_callback_query(filters.regex("cbpause"))
@@ -195,7 +195,7 @@ async def cbpause(_, query: CallbackQuery):
         except Exception as e:
             await query.edit_message_text(f"🚫 **error:**\n\n`{e}`", reply_markup=bcl)
     else:
-        await query.answer("**𝗕𝗿𝗼𝗸𝗲𝗻 𝗦𝘁𝗿𝗲𝗮𝗺 𝗘𝗻𝗱𝗲𝗱** 🙂", show_alert=True)
+        await query.answer("**» ʙʀᴏᴋᴇɴ ꜱᴛʀᴇᴀᴍ ᴇɴᴅᴇᴅ.**", show_alert=True)
 
 
 @Client.on_callback_query(filters.regex("cbresume"))
@@ -215,7 +215,7 @@ async def cbresume(_, query: CallbackQuery):
         except Exception as e:
             await query.edit_message_text(f"🚫 **error:**\n\n`{e}`", reply_markup=bcl)
     else:
-        await query.answer("**𝗡𝗼𝘁𝗵𝗶𝗻𝗴 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 𝗕𝗮𝗯𝘆** 🙂", show_alert=True)
+        await query.answer("**ɴᴏᴛʜɪɴɢ ᴘʟᴀʏɪɴɢ ʙᴀʙʏ** 🙂", show_alert=True)
 
 
 @Client.on_callback_query(filters.regex("cbstop"))
@@ -293,4 +293,4 @@ async def change_volume(client, m: Message):
         except Exception as e:
             await m.reply(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply("**𝗡𝗼𝘁𝗵𝗶𝗻𝗴 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 𝗕𝗮𝗯𝘆** 🙂")
+        await m.reply("**ɴᴏᴛʜɪɴɢ ᴘʟᴀʏɪɴɢ ʙᴀʙʏ** 🙂")
