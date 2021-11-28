@@ -101,7 +101,7 @@ async def vplay(c: Client, m: Message):
         b = await c.get_chat_member(chat_id, ubot.id)
         if b.status == "kicked":
             await m.reply_text(
-                f"@{ASSISTANT_NAME} **is banned in group** {m.chat.title}\n\n» **unban the userbot first if you want to use this bot.**"
+                f"@{ASSISTANT_NAME} **ᴛʜɪꜱ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ᴏᴘ ᴀꜱꜱɪꜱᴛᴀɴᴛ ʙᴀɴɴᴇᴅ ɪɴ** {m.chat.title}\n\n» **ᴜɴʙᴀɴ ᴛʜᴇ ᴜꜱᴇʀʙᴏᴛ ꜰɪʀꜱᴛ ᴀɴᴅ ᴛʜᴇɴ ᴀᴅᴅ ᴛʜᴇᴍ ᴍᴀɴᴜᴀʟʟʏ. ɪꜰ ᴜ ʜᴀᴠᴇ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ᴛʜᴇɴ ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ ᴀᴛ ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ ɢʀᴏᴜᴘ.**"
             )
             return
     except UserNotParticipant:
@@ -120,7 +120,7 @@ async def vplay(c: Client, m: Message):
                 pass
             except Exception as e:
                 return await m.reply_text(
-                    f"❌ **userbot failed to join**\n\n**reason**: `{e}`"
+                    f"❌ **userbot failed to join Contact at Support Group**\n\n**reason**: `{e}`"
                 )
 
     if replied:
