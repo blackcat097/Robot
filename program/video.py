@@ -106,7 +106,7 @@ async def vplay(c: Client, m: Message):
             try:
                 await user.join_chat(m.chat.username)
             except Exception as e:
-                await m.reply_text(f"❌ **userbot failed to join**\n\n**reason**: `{e}`")
+                await m.reply_text(f"❌ **userbot failed to join Contact at Support Group**\n\n**reason**: `{e}`")
                 return
         else:
             try:
@@ -336,7 +336,7 @@ async def vstream(c: Client, m: Message):
             try:
                 await user.join_chat(m.chat.username)
             except Exception as e:
-                await m.reply_text(f"❌ **userbot failed to join**\n\n**reason**: `{e}`")
+                await m.reply_text(f"❌ **userbot failed to join Contact at support group**\n\n**reason**: `{e}`")
                 return
         else:
             try:
