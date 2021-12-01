@@ -113,7 +113,7 @@ async def play(c: Client, m: Message):
                 pass
             except Exception as e:
                 return await m.reply_text(
-                    f"❌ **userbot failed to join**\n\n**reason**: `{e}`"
+                    f"❌ **userbot failed to join Contact at : @CreatorPavanSupport**\n\n**reason**: `{e}`"
                 )
 
     if replied:
