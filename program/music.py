@@ -62,7 +62,7 @@ async def play(c: Client, m: Message):
                       InlineKeyboardButton("▶️", callback_data="cbresume"),
                   ],[
                 InlineKeyboardButton(text="🖱 ᴍᴇɴᴜ", callback_data="cbmenu"),
-                InlineKeyboardButton(text="ʟʏʀɪᴄꜱ 💡", "playlist"),
+                InlineKeyboardButton(text="ʟʏʀɪᴄꜱ 💡", callback_data="playlist"),
             ],[
                 InlineKeyboardButton(text="👥 ɢʀᴏᴜᴘ", url=f"https://t.me/Creatorpavansupport"),
                 InlineKeyboardButton(text="ꜱᴇʀᴠᴇʀ 🌐", url=f"https://t.me/theCreatorPavan"),
