@@ -64,8 +64,8 @@ async def play(c: Client, m: Message):
                 InlineKeyboardButton(text="🖱 ᴍᴇɴᴜ", callback_data="cbmenu"),
                 InlineKeyboardButton(text="ʟʏʀɪᴄꜱ 💡", callback_data="playlist"),
             ],[
-                InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/Creatorpavansupport"),
-                InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/theCreatorPavan"),
+                InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/catmusicworld"),
+                InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/catmusicworld"),
             ],[
                       InlineKeyboardButton("ʙʀᴏᴋᴇɴ ᴄʟᴏꜱᴇ", callback_data="cls")],
                   ]
@@ -108,7 +108,7 @@ async def play(c: Client, m: Message):
             try:
                 await user.join_chat(m.chat.username)
             except Exception as e:
-                await m.reply_text(f"❌ **userbot failed to join Contact at : @CreatorPavanSupport**\n\n**reason**: `{e}`")
+                await m.reply_text(f"❌ **userbot failed to join Contact at : @catmusicworld**\n\n**reason**: `{e}`")
                 return
         else:
             try:
@@ -119,7 +119,7 @@ async def play(c: Client, m: Message):
                 pass
             except Exception as e:
                 return await m.reply_text(
-                    f"❌ **userbot failed to join Contact at : @CreatorPavanSupport**\n\n**reason**: `{e}`"
+                    f"❌ **userbot failed to join Contact at : @Catmusicworld**\n\n**reason**: `{e}`"
                 )
 
     if replied:
@@ -142,7 +142,7 @@ async def play(c: Client, m: Message):
                 await suhu.delete()
                 await m.reply_photo(
                     photo=f"{IMG_1}",
-                    caption=f"**❰ 𝗕𝗿𝗼𝗸𝗲𝗻 ❘ 𝟮.𝟬 ❱ ❤ 𝗡𝗼𝘄 🤘 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 📀 𝗙𝗿𝗼𝗺 🔊 𝗖𝗿𝗲𝗮𝘁𝗼𝗿 🚩 𝗣𝗮𝘃𝗮𝗻 😎 𝗦𝗲𝗿𝘃𝗲𝗿...**🤞\n\n **𝗨𝘀𝗲𝗿  :** {m.from_user.mention()}",
+                    caption=f"**❰ 𝗕𝙡𝙖𝙘𝙠 ❘ 𝙘𝙖𝙩 ❱ ❤ 𝗡𝗼𝘄 🤘 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 📀 𝗙𝗿𝗼𝗺 🔊 𝙗𝙡𝙖𝙘𝙠 🚩 𝙘𝙖𝙩 🐱 𝗦𝗲𝗿𝘃𝗲𝗿...**🤞\n\n **𝗨𝘀𝗲𝗿  :** {m.from_user.mention()}",
                     reply_markup=keyboard,
                 )
             else:
@@ -159,7 +159,7 @@ async def play(c: Client, m: Message):
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                 await m.reply_photo(
                     photo=f"{IMG_2}",
-                    caption=f"**❰ 𝗕𝗿𝗼𝗸𝗲𝗻 ❘ 𝟮.𝟬 ❱ ❤ 𝗡𝗼𝘄 🤘 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 📀 𝗙𝗿𝗼𝗺 🔊 𝗖𝗿𝗲𝗮𝘁𝗼𝗿 🚩 𝗣𝗮𝘃𝗮𝗻 😎 𝗦𝗲𝗿𝘃𝗲𝗿...**🤞\n\n **𝗨𝘀𝗲𝗿  :** {requester}",
+                    caption=f"**❰ 𝗕𝙡𝙖𝙘𝙠 ❘ 𝙘𝙖𝙩 ❱ ❤ 𝗡𝗼𝘄 🤘 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 📀 𝗙𝗿𝗼𝗺 🔊 𝙗𝙡𝙖𝙘𝙠 🚩 𝙘𝙖𝙩 🐱 𝗦𝗲𝗿𝘃𝗲𝗿...**🤞\n\n **𝗨𝘀𝗲𝗿  :** {requester}",
                     reply_markup=keyboard,
                 )
              except Exception as e:
@@ -191,7 +191,7 @@ async def play(c: Client, m: Message):
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             await m.reply_photo(
                                 photo=f"{IMG_1}",
-                                caption=f"**❰ 𝗕𝗿𝗼𝗸𝗲𝗻 ❘ 𝟮.𝟬 ❱ ❤ 𝗡𝗼𝘄 🤘 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 📀 𝗙𝗿𝗼𝗺 🔊 𝗖𝗿𝗲𝗮𝘁𝗼𝗿 🚩 𝗣𝗮𝘃𝗮𝗻 😎 𝗦𝗲𝗿𝘃𝗲𝗿...**🤞\n\n **𝗨𝘀𝗲𝗿  :** {requester}",
+                                caption=f"**❰ 𝗕𝙡𝙖𝙘𝙠 ❘ 𝙘𝙖𝙩 ❱ ❤ 𝗡𝗼𝘄 🤘 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 📀 𝗙𝗿𝗼𝗺 🔊 𝙗𝙡𝙖𝙘𝙠 🚩 𝙘𝙖𝙩 🐱 𝗦𝗲𝗿𝘃𝗲𝗿...**🤞\n\n **𝗨𝘀𝗲𝗿  :** {requester}",
                                 reply_markup=keyboard,
                             )
                         else:
@@ -208,7 +208,7 @@ async def play(c: Client, m: Message):
                                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                                 await m.reply_photo(
                                     photo=f"{IMG_2}",
-                                    caption=f"**❰ 𝗕𝗿𝗼𝗸𝗲𝗻 ❘ 𝟮.𝟬 ❱ ❤ 𝗡𝗼𝘄 🤘 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 📀 𝗙𝗿𝗼𝗺 🔊 𝗖𝗿𝗲𝗮𝘁𝗼𝗿 🚩 𝗣𝗮𝘃𝗮𝗻 😎 𝗦𝗲𝗿𝘃𝗲𝗿...**🤞\n\n **𝗨𝘀𝗲𝗿  :** {requester}",
+                                    caption=f"**❰ 𝗕𝙡𝙖𝙘𝙠 ❘ 𝙘𝙖𝙩 ❱ ❤ 𝗡𝗼𝘄 🤘 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 📀 𝗙𝗿𝗼𝗺 🔊 𝙗𝙡𝙖𝙘𝙠 🚩 𝙘𝙖𝙩 🐱  𝗦𝗲𝗿𝘃𝗲𝗿...**🤞\n\n **𝗨𝘀𝗲𝗿  :** {requester}",
                                     reply_markup=keyboard,
                                 )
                             except Exception as ep:
@@ -241,7 +241,7 @@ async def play(c: Client, m: Message):
                         )
                         await m.reply_photo(
                             photo=f"{IMG_1}",
-                            caption=f"**❰ 𝗕𝗿𝗼𝗸𝗲𝗻 ❘ 𝟮.𝟬 ❱ ❤ 𝗡𝗼𝘄 🤘 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 📀 𝗙𝗿𝗼𝗺 🔊 𝗖𝗿𝗲𝗮𝘁𝗼𝗿 🚩 𝗣𝗮𝘃𝗮𝗻 😎 𝗦𝗲𝗿𝘃𝗲𝗿...**🤞\n\n **𝗨𝘀𝗲𝗿  :** {requester}",
+                            caption=f"**❰ 𝗕𝙡𝙖𝙘𝙠 ❘ 𝙘𝙖𝙩  ❱ ❤ 𝗡𝗼𝘄 🤘 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 📀 𝗙𝗿𝗼𝗺 🔊 𝙗𝙡𝙖𝙘𝙠 🚩 𝙘𝙖𝙩 🐱 𝗦𝗲𝗿𝘃𝗲𝗿...**🤞\n\n **𝗨𝘀𝗲𝗿  :** {requester}",
                             reply_markup=keyboard,
                         )
                     else:
@@ -258,7 +258,7 @@ async def play(c: Client, m: Message):
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             await m.reply_photo(
                                 photo=f"{IMG_2}",
-                                caption=f"**❰ 𝗕𝗿𝗼𝗸𝗲𝗻 ❘ 𝟮.𝟬 ❱ ❤ 𝗡𝗼𝘄 🤘 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 📀 𝗙𝗿𝗼𝗺 🔊 𝗖𝗿𝗲𝗮𝘁𝗼𝗿 🚩 𝗣𝗮𝘃𝗮𝗻 😎 𝗦𝗲𝗿𝘃𝗲𝗿...**🤞\n\n **𝗨𝘀𝗲𝗿  :** {requester}",
+                                caption=f"**❰ 𝗕𝙡𝙖𝙘𝙠 ❘ 𝙘𝙖𝙩 ❱ ❤ 𝗡𝗼𝘄 🤘 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 📀 𝗙𝗿𝗼𝗺 🔊 𝙗𝙡𝙖𝙘𝙠 🚩 𝙘𝙖𝙩 🐱 𝗦𝗲𝗿𝘃𝗲𝗿...**🤞\n\n **𝗨𝘀𝗲𝗿  :** {requester}",
                                 reply_markup=keyboard,
                             )
                         except Exception as ep:
@@ -329,7 +329,7 @@ async def stream(c: Client, m: Message):
                 pass
             except Exception as e:
                 return await m.reply_text(
-                    f"❌ **userbot failed to join Contact at : @CreatorPavanSupport**\n\n**reason**: `{e}`"
+                    f"❌ **userbot failed to join Contact at : @Catmusicworld**\n\n**reason**: `{e}`"
                 )
 
     if len(m.command) < 2:
@@ -355,7 +355,7 @@ async def stream(c: Client, m: Message):
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                 await m.reply_photo(
                     photo=f"{IMG_1}",
-                    caption=f"**❰ 𝗕𝗿𝗼𝗸𝗲𝗻 ❘ 𝟮.𝟬 ❱ ❤ 𝗡𝗼𝘄 🤘 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 📀 𝗙𝗿𝗼𝗺 🔊 𝗖𝗿𝗲𝗮𝘁𝗼𝗿 🚩 𝗣𝗮𝘃𝗮𝗻 😎 𝗦𝗲𝗿𝘃𝗲𝗿...**🤞\n\n **𝗨𝘀𝗲𝗿  :** {requester}",
+                    caption=f"**❰ 𝗕𝙡𝙖𝙘𝙠 ❘ 𝙘𝙖𝙩❱ ❤ 𝗡𝗼𝘄 🤘 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 📀 𝗙𝗿𝗼𝗺 🔊 𝙗𝙡𝙖𝙘𝙠 🚩 𝙘𝙖𝙩 🐱  𝗦𝗲𝗿𝘃𝗲𝗿...**🤞\n\n **𝗨𝘀𝗲𝗿  :** {requester}",
                     reply_markup=keyboard,
                 )
             else:
