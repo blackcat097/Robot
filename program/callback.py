@@ -16,7 +16,7 @@ from config import (
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""𝗧𝗵𝗶𝘀 𝗶𝘀 𝘁𝗵𝗲 𝗕𝗿𝗼𝗸𝗲𝗻 𝟮.𝟬...!**
+        f"""𝗧𝗵𝗶𝘀 𝗶𝘀 𝘁𝗵𝗲 𝗕𝙡𝙖𝙘𝙠 𝙘𝙖𝙩...!**
 ┏━━━━━━━━━━━━━━━━━┓
 ┣» ᴏᴘ ᴍᴜꜱɪᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ. 
 ┣» ʜɪɢʜ ǫᴜᴀʟɪᴛʏ ᴍᴜꜱɪᴄ.
@@ -24,7 +24,7 @@ async def cbstart(_, query: CallbackQuery):
 ┣» ᴀᴅᴠᴀɴᴄᴇᴅ ꜰᴇᴀᴛᴜʀᴇꜱ.
 ┣» ꜱᴜᴘᴇʀꜰᴀꜱᴛ ꜱᴘᴇᴇᴅ.
 ┗━━━━━━━━━━━━━━━━━┛
-ᴅᴇꜱɪɢɴᴇᴅ ʙʏ :** [𝗖𝗿𝗲𝗮𝘁𝗼𝗿 𝗣𝗮𝘃𝗮𝗻](https://t.me/CreatorPavan)**
+ᴅᴇꜱɪɢɴᴇᴅ ʙʏ :**[𝙗𝙡𝙖𝙘𝙠 𝙘𝙖𝙩](https://t.me/The_cat_lover0)**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -32,10 +32,10 @@ async def cbstart(_, query: CallbackQuery):
                     InlineKeyboardButton("ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ", callback_data="cbcmds"),
                 ],[
                     InlineKeyboardButton(
-                        "ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/creatorpavansupport"
+                        "ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/catmusicworld"
                     ),
                     InlineKeyboardButton(
-                        "ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/theCreatorPavan"
+                        "ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/catmusicworld"
                     ),
                 ],[
                     InlineKeyboardButton(
