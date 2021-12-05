@@ -135,7 +135,7 @@ async def get_uptime(client: Client, message: Message):
         f"• **ꜱᴛᴀʀᴛ ᴀᴛ :** `{START_TIME_ISO}`"
     )
 
-@Client.on_message(filters.command("pavan") & ~filters.private & ~filters.channel)
+@Client.on_message(filters.command("blackcat") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
       await message.reply_text("""**ᴛʜɪꜱ ɪꜱ ᴛʜᴇ ᴏᴘ ʙᴏᴛ ᴡʜɪᴄʜ ɪꜱ ꜱᴘᴇᴄɪꜰɪᴄᴀʟʟʏ ᴅᴇꜱɪɢɴᴇᴅ ʙʏ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ.**""",
       reply_markup=InlineKeyboardMarkup(
