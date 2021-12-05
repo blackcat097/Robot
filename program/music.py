@@ -57,14 +57,18 @@ async def play(c: Client, m: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="ꜱᴇᴛᴛɪɴɢꜱ", callback_data="cbmenu"),
+                      InlineKeyboardButton("⏹", callback_data="cbstop"),
+                      InlineKeyboardButton("⏸", callback_data="cbpause"),
+                      InlineKeyboardButton("▶️", callback_data="cbresume"),
+                  ],[
+                InlineKeyboardButton(text="🖱 ᴍᴇɴᴜ", callback_data="cbmenu""),
+                InlineKeyboardButton(text="ʟʏʀɪᴄꜱ 💡", "playlist"),
             ],[
-                InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/Creatorpavansupport"),
-                InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/theCreatorPavan"),
+                InlineKeyboardButton(text="👥 ɢʀᴏᴜᴘ", url=f"https://t.me/Creatorpavansupport"),
+                InlineKeyboardButton(text="ꜱᴇʀᴠᴇʀ 🌐", url=f"https://t.me/theCreatorPavan"),
             ],[
-                InlineKeyboardButton(text="ʙʀᴏᴋᴇɴ ᴄʟᴏꜱᴇ", callback_data="cls"),
-            ]
-        ]
+                      InlineKeyboardButton("🗑 ʙʀᴏᴋᴇɴ ᴄʟᴏꜱᴇ", callback_data="cls")],
+                  ]
     )
     if m.sender_chat:
         return await m.reply_text("you're an __Anonymous Admin__ !\n\n» revert back to user account from admin rights.")
