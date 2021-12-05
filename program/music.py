@@ -64,10 +64,10 @@ async def play(c: Client, m: Message):
                 InlineKeyboardButton(text="🖱 ᴍᴇɴᴜ", callback_data="cbmenu"),
                 InlineKeyboardButton(text="ʟʏʀɪᴄꜱ 💡", callback_data="playlist"),
             ],[
-                InlineKeyboardButton(text="👥 ɢʀᴏᴜᴘ", url=f"https://t.me/Creatorpavansupport"),
-                InlineKeyboardButton(text="ꜱᴇʀᴠᴇʀ 🌐", url=f"https://t.me/theCreatorPavan"),
+                InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/Creatorpavansupport"),
+                InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/theCreatorPavan"),
             ],[
-                      InlineKeyboardButton("🗑 ʙʀᴏᴋᴇɴ ᴄʟᴏꜱᴇ", callback_data="cls")],
+                      InlineKeyboardButton("ʙʀᴏᴋᴇɴ ᴄʟᴏꜱᴇ", callback_data="cls")],
                   ]
     )
     if m.sender_chat:
