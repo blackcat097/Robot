@@ -39,7 +39,7 @@ async def cbstart(_, query: CallbackQuery):
                     ),
                 ],[
                     InlineKeyboardButton(
-                        "🙂 ᴀᴅᴅ ʙʀᴏᴋᴇɴ ʙᴀʙʏ 🙂",
+                        "🙂 𝙗𝙡𝙖𝙘𝙠 𝙘𝙖𝙩🙂",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
@@ -67,7 +67,7 @@ async def cbguides(_, query: CallbackQuery):
 
 ⚡ __Powered by {BOT_NAME} A.I__""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 ʙʀᴏᴋᴇɴ ʙᴀᴄᴋ", callback_data="cbstart")]]
+            [[InlineKeyboardButton("🔙 𝙗𝙡𝙖𝙘𝙠 𝙘𝙖𝙩", callback_data="cbstart")]]
         ),
     )
 
@@ -79,7 +79,7 @@ async def cbcmds(_, query: CallbackQuery):
 
 » ꜰᴏʀ ᴋɴᴏᴡɪɴɢ ᴀ ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ ᴏꜰ ʙʀᴏᴋᴇɴ ᴊᴜꜱᴛ ᴘʀᴇꜱꜱ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ᴀɴᴅ ʀᴇᴀᴅ ᴄᴏᴍᴍᴀɴᴅꜱ ᴇxᴘʟᴀɴᴀᴛɪᴏɴ.
 
-**ᴛʜɪꜱ ᴏᴘ ʙᴏᴛ ɪꜱ ꜱᴘᴇᴄɪᴀʟʟʏ ᴅᴇꜱɪɢɴᴇᴅ ʙʏ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ.**""",
+** 𝙗𝙖𝙡𝙘𝙠 𝙘𝙖𝙩 𝙞𝙨 𝙛𝙤𝙧 𝙪 😁🙈.**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -113,7 +113,7 @@ async def cbbasic(_, query: CallbackQuery):
 » /uptime - ꜱʜᴏᴡ ᴛʜᴇ ʙᴏᴛ ᴜᴘᴛɪᴍᴇ ꜱᴛᴀᴛᴜꜱ 
 » /alive - ꜱʜᴏᴡ ᴛʜᴇ ʙᴏᴛ ᴀʟɪᴠᴇ ɪɴꜰᴏ [ɪɴ ɢʀᴏᴜᴘ]
 
-**.**""",
+**𝙗𝙡𝙖𝙘𝙠 𝙘𝙖𝙩**""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 ʙʀᴏᴋᴇɴ ʙᴀᴄᴋ", callback_data="cbcmds")]]
         ),
