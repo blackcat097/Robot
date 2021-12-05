@@ -53,7 +53,7 @@ async def _human_time_duration(seconds):
 async def start_(client: Client, message: Message):
     await message.reply_text(
         f"""👋 **Hᴇᴍʟᴏ {message.from_user.mention()}**\n
-𝗧𝗵𝗶𝘀 𝗶𝘀 𝘁𝗵𝗲 𝗕𝗿𝗼𝗸𝗲𝗻 𝟮.𝟬...!**
+𝗧𝗵𝗶𝘀 𝗶𝘀 𝘁𝗵𝗲 𝘽𝙡𝙖𝙘𝙠 𝙘𝙖𝙩...!**
 ┏━━━━━━━━━━━━━━━━━┓
 ┣» ᴏᴘ ᴍᴜꜱɪᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ. 
 ┣» ʜɪɢʜ ǫᴜᴀʟɪᴛʏ ᴍᴜꜱɪᴄ.
@@ -61,7 +61,7 @@ async def start_(client: Client, message: Message):
 ┣» ᴀᴅᴠᴀɴᴄᴇᴅ ꜰᴇᴀᴛᴜʀᴇꜱ.
 ┣» ꜱᴜᴘᴇʀꜰᴀꜱᴛ ꜱᴘᴇᴇᴅ.
 ┗━━━━━━━━━━━━━━━━━┛
-ᴅᴇꜱɪɢɴᴇᴅ ʙʏ :** [𝗖𝗿𝗲𝗮𝘁𝗼𝗿 𝗣𝗮𝘃𝗮𝗻](https://t.me/Creator_Pavan)**
+ᴅᴇꜱɪɢɴᴇᴅ ʙʏ :** [𝙗𝙡𝙖𝙘𝙠 𝙘𝙖𝙩](https://t.me/The_cat_lover0)**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -69,10 +69,10 @@ async def start_(client: Client, message: Message):
                     InlineKeyboardButton("ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ", callback_data="cbcmds"),
                 ],[
                     InlineKeyboardButton(
-                        "ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/creatorpavansupport"
+                        "ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/catmusicworld"
                     ),
                     InlineKeyboardButton(
-                        "ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/theCreatorPavan"
+                        "ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/catmusicworld"
                     ),
                 ],[
                     InlineKeyboardButton(
@@ -97,12 +97,12 @@ async def alive(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/CreatorPavanSupport"),
+                InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/catmusicworld"),
                 InlineKeyboardButton(
-                    "ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/theCreatorPavan"
+                    "ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/catmusicworld"
                 ),
             ],[
-                InlineKeyboardButton("ᴀʟʟ ɪɴꜰᴏ ʜᴇʀᴇ", url=f"https://t.me/CreatorPavanNetwork"),
+                InlineKeyboardButton("ᴀʟʟ ɪɴꜰᴏ ʜᴇʀᴇ", url=f"https://t.me/catmusicworld"),
             ]
         ]
     )
@@ -142,7 +142,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "ᴀʟʟ ɪɴꜰᴏ ʜᴇʀᴇ", url="https://t.me/CreatorPavanNetwork")
+                        "ᴀʟʟ ɪɴꜰᴏ ʜᴇʀᴇ", url="https://t.me/the_cat_lover0")
                 ]
             ]
         )
