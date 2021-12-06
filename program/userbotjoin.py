@@ -34,9 +34,8 @@ async def join_group(client, message):
     except Exception as e:
         print(e)
         await message.reply_text(
-            f"🛑 𝗙𝗹𝗼𝗼𝗱 𝗪𝗮𝗶𝘁 𝗘𝗿𝗿𝗼𝗿 🛑 \n\n**ʙʟᴀᴄᴋ ᴄᴀᴛ ᴏᴘ ᴜꜱᴇʀʙᴏᴛ ᴄᴀɴ'ᴛ ᴊᴏɪɴ ᴜʀ ɢʀᴏᴜᴘ ᴅᴜᴇ ᴛᴏ ʜᴇᴀᴠʏ ᴊᴏɪɴ ʀᴇQᴜᴇꜱᴛ.**"
-            "\n\n**ᴀᴅᴅ ᴀꜱꜱɪꜱᴛᴀɴᴛ.**\n\n**ᴀꜱꜱɪꜱᴛᴀɴᴛ :  @Blackcat_music_player
-       **\n\n**ᴍꜱɢ ᴀᴛ :**\n\n**@catmusicworld**\n\n**ᴏʀ ᴄᴏɴᴛᴀᴄᴛ ᴏᴘ ᴍᴀꜱᴛᴇʀ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ.**",
+            f"🛑 𝗙𝗹𝗼𝗼𝗱 𝗪𝗮𝗶𝘁 𝗘𝗿𝗿𝗼𝗿 🛑 \n\n**ᴄʀᴇᴀᴛᴏʀ ʙʟᴀᴄᴋ ᴄᴀᴛ ᴏᴘ ᴜꜱᴇʀʙᴏᴛ ᴄᴀɴ'ᴛ ᴊᴏɪɴ ᴜʀ ɢʀᴏᴜᴘ ᴅᴜᴇ ᴛᴏ ʜᴇᴀᴠʏ ᴊᴏɪɴ ʀᴇQᴜᴇꜱᴛ.**"
+            "\n\n**ᴀᴅᴅ ᴀꜱꜱɪꜱᴛᴀɴᴛ.**\n\n**ᴀꜱꜱɪꜱᴛᴀɴᴛ :  @Blackcat_music_player**\n\n**ᴍꜱɢ ᴀᴛ :**\n\n**@catmusicworld**\n\n**ᴏʀ ᴄᴏɴᴛᴀᴄᴛ ᴏᴘ ᴍᴀꜱᴛᴇʀ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ.**",
         )
         return
     await message.reply_text(
