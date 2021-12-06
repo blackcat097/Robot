@@ -77,7 +77,7 @@ async def cbcmds(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""💞 **ʜᴇʟʟᴏᴡ [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**
 
-» ꜰᴏʀ ᴋɴᴏᴡɪɴɢ ᴀ ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ ᴏ 𝙗𝙡𝙖𝙫𝙠𝙘𝙖𝙩ᴊᴜꜱᴛ ᴘʀᴇꜱꜱ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ᴀɴᴅ ʀᴇᴀᴅ ᴄᴏᴍᴍᴀɴᴅꜱ ᴇxᴘʟᴀɴᴀᴛɪᴏɴ.
+» ꜰᴏʀ ᴋɴᴏᴡɪɴɢ ᴀ ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ ᴏ ʙʟᴀᴄᴋᴄᴀᴛ ᴘʀᴇꜱꜱ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ᴀɴᴅ ʀᴇᴀᴅ ᴄᴏᴍᴍᴀɴᴅꜱ ᴇxᴘʟᴀɴᴀᴛɪᴏɴ.
 
 ** 𝙗𝙖𝙡𝙘𝙠 𝙘𝙖𝙩 𝙞𝙨 𝙛𝙤𝙧 𝙪 😁🙈.**""",
         reply_markup=InlineKeyboardMarkup(
@@ -88,7 +88,7 @@ async def cbcmds(_, query: CallbackQuery):
                 ],[
                     InlineKeyboardButton("ʙᴀꜱɪᴄ ᴄᴍᴅ", callback_data="cbbasic")
                 ],[
-                    InlineKeyboardButton("🔙 ʙʀᴏᴋᴇɴ ʙᴀᴄᴋ", callback_data="cbstart")
+                    InlineKeyboardButton("🔙 ᴍᴇᴏᴡ ʙᴀᴄᴋ", callback_data="cbstart")
                 ],
             ]
         ),
@@ -98,7 +98,7 @@ async def cbcmds(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbbasic"))
 async def cbbasic(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""ʙʀᴏᴋᴇɴ ʙᴀꜱɪᴄ ᴄᴏᴍᴍᴀɴᴅꜱ :
+        f"""ᴍᴇᴏᴡ ʙᴀꜱɪᴄ ᴄᴏᴍᴍᴀɴᴅꜱ :
 
 » /play [ꜱᴏɴɢ ɴᴀᴍᴇ/ʟɪɴᴋ] - ᴘʟᴀʏ ᴍᴜꜱɪᴄ ᴏɴ ᴠɪᴅᴇᴏ ᴄʜᴀᴛ 
 » /stream [Qᴜᴇʀʏ/ʟɪɴᴋ] - ꜱᴛʀᴇᴀᴍ ᴛʜᴇ ʏᴛ ʟɪᴠᴇ/ʀᴀᴅɪᴏ ʟɪᴠᴇ ᴍᴜꜱɪᴄ 
@@ -115,7 +115,7 @@ async def cbbasic(_, query: CallbackQuery):
 
 **𝙗𝙡𝙖𝙘𝙠 𝙘𝙖𝙩**""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 ʙʀᴏᴋᴇɴ ʙᴀᴄᴋ", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("🔙 ᴍᴇᴏᴡ ʙᴀᴄᴋ", callback_data="cbcmds")]]
         ),
     )
 
@@ -138,14 +138,14 @@ async def cbadmin(_, query: CallbackQuery):
 
 **𝙗𝙡𝙖𝙘𝙠 𝙘𝙖𝙩.**""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 ʙʀᴏᴋᴇɴ ʙᴀᴄᴋ", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("🔙 ᴍᴇᴏᴡ ʙᴀᴄᴋ", callback_data="cbcmds")]]
         ),
     )
 
 @Client.on_callback_query(filters.regex("cbsudo"))
 async def cbsudo(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""ʙʀᴏᴋᴇɴ ꜱᴜᴅᴏ ᴄᴏᴍᴍᴀɴᴅꜱ :
+        f"""ᴍᴇᴏᴡ ꜱᴜᴅᴏ ᴄᴏᴍᴍᴀɴᴅꜱ :
 
 » /rmw - ᴄʟᴇᴀɴ ᴀʟʟ ʀᴀᴡ ꜰɪʟᴇꜱ 
 » /rmd - ᴄʟᴇᴀɴ ᴀʟʟ ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ ꜰɪʟᴇꜱ 
@@ -156,7 +156,7 @@ async def cbsudo(_, query: CallbackQuery):
 
 **𝙗𝙡𝙖𝙘𝙠 𝙘𝙖𝙩 .**""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 ʙʀᴏᴋᴇɴ ʙᴀᴄᴋ", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("🔙 ᴍᴇᴏᴡ ʙᴀᴄᴋ", callback_data="cbcmds")]]
         ),
     )
 
@@ -171,7 +171,7 @@ async def cbmenu(_, query: CallbackQuery):
     chat_id = query.message.chat.id
     if chat_id in QUEUE:
           await query.edit_message_text(
-              f"⚙️ **ʙʀᴏᴋᴇɴ ꜱᴇᴛᴛɪɴɢꜱ ꜰᴏʀ** {query.message.chat.title}\n\n⏸ : ʙʀᴏᴋᴇɴ ᴘᴀᴜꜱᴇ\n▶️ : ʙʀᴏᴋᴇɴ ʀᴇꜱᴜᴍᴇ\n🔇 : ʙʀᴏᴋᴇɴ ᴍᴜᴛᴇ\n🔊 : ʙʀᴏᴋᴇɴ ᴜɴᴍᴜᴛᴇ\n⏹ : ʙʀᴏᴋᴇɴ ꜱᴛʀᴇᴀᴍ ꜱᴛᴏᴘ\n\n© @CreatorPavanNetwork",
+              f"⚙️ **ᴍᴇᴏᴡ ꜱᴇᴛᴛɪɴɢꜱ ꜰᴏʀ** {query.message.chat.title}\n\n⏸ : ᴍᴇᴏᴡ ᴘᴀᴜꜱᴇ\n▶️ : ᴍᴇᴏᴡ ʀᴇꜱᴜᴍᴇ\n🔇 : ᴍᴇᴏᴡ ᴍᴜᴛᴇ\n🔊 : ᴍᴇᴏᴡ ᴜɴᴍᴜᴛᴇ\n⏹ : ᴍᴇᴏᴡ ꜱᴛʀᴇᴀᴍ ꜱᴛᴏᴘ\n\n© @catmusicworld",
               reply_markup=InlineKeyboardMarkup(
                   [[
                       InlineKeyboardButton("⏹", callback_data="cbstop"),
@@ -181,7 +181,7 @@ async def cbmenu(_, query: CallbackQuery):
                       InlineKeyboardButton("🔇", callback_data="cbmute"),
                       InlineKeyboardButton("🔊", callback_data="cbunmute"),
                   ],[
-                      InlineKeyboardButton("🗑 ʙʀᴏᴋᴇɴ ᴄʟᴏꜱᴇ", callback_data="cls")],
+                      InlineKeyboardButton("🗑 ᴍᴇᴏᴡ ᴄʟᴏꜱᴇ", callback_data="cls")],
                   ]
              ),
          )
