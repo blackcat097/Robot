@@ -98,7 +98,7 @@ async def vplay(c: Client, m: Message):
         b = await c.get_chat_member(chat_id, ubot.id)
         if b.status == "kicked":
             await m.reply_text(
-                f"@{ASSISTANT_NAME} **ᴛʜɪꜱ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ᴏᴘ ᴀꜱꜱɪꜱᴛᴀɴᴛ ʙᴀɴɴᴇᴅ ɪɴ** {m.chat.title}\n\n» **ᴜɴʙᴀɴ ᴛʜᴇ ᴜꜱᴇʀʙᴏᴛ ꜰɪʀꜱᴛ ᴀɴᴅ ᴛʜᴇɴ ᴀᴅᴅ ᴛʜᴇᴍ ᴍᴀɴᴜᴀʟʟʏ. ɪꜰ ᴜ ʜᴀᴠᴇ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ᴛʜᴇɴ ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ ᴀᴛ ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ ɢʀᴏᴜᴘ.**\n\n© @CreatorPavanNetwork"
+                f"@{ASSISTANT_NAME} **ᴛʜɪꜱ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ᴏᴘ ᴀꜱꜱɪꜱᴛᴀɴᴛ ʙᴀɴɴᴇᴅ ɪɴ** {m.chat.title}\n\n» **ᴜɴʙᴀɴ ᴛʜᴇ ᴜꜱᴇʀʙᴏᴛ ꜰɪʀꜱᴛ ᴀɴᴅ ᴛʜᴇɴ ᴀᴅᴅ ᴛʜᴇᴍ ᴍᴀɴᴜᴀʟʟʏ. ɪꜰ ᴜ ʜᴀᴠᴇ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ᴛʜᴇɴ ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ ᴀᴛ ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ ɢʀᴏᴜᴘ.**\n\n© @ᴛʜᴇ_ᴄᴀᴛ_ʟᴏᴄᴇʀ𝟶"
             )
             return
     except UserNotParticipant:
@@ -328,7 +328,7 @@ async def vstream(c: Client, m: Message):
         b = await c.get_chat_member(chat_id, ubot.id)
         if b.status == "kicked":
             await m.reply_text(
-                f"@{ASSISTANT_NAME} **ᴛʜɪꜱ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ᴏᴘ ᴀꜱꜱɪꜱᴛᴀɴᴛ ʙᴀɴɴᴇᴅ ɪɴ** {m.chat.title}\n\n» **ᴜɴʙᴀɴ ᴛʜᴇ ᴜꜱᴇʀʙᴏᴛ ꜰɪʀꜱᴛ ᴀɴᴅ ᴛʜᴇɴ ᴀᴅᴅ ᴛʜᴇᴍ ᴍᴀɴᴜᴀʟʟʏ. ɪꜰ ᴜ ʜᴀᴠᴇ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ᴛʜᴇɴ ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ ᴀᴛ ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ ɢʀᴏᴜᴘ.**\n\n© @CreatorPavanNetwork"
+                f"@{ASSISTANT_NAME} **ᴛʜɪꜱ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ᴏᴘ ᴀꜱꜱɪꜱᴛᴀɴᴛ ʙᴀɴɴᴇᴅ ɪɴ** {m.chat.title}\n\n» **ᴜɴʙᴀɴ ᴛʜᴇ ᴜꜱᴇʀʙᴏᴛ ꜰɪʀꜱᴛ ᴀɴᴅ ᴛʜᴇɴ ᴀᴅᴅ ᴛʜᴇᴍ ᴍᴀɴᴜᴀʟʟʏ. ɪꜰ ᴜ ʜᴀᴠᴇ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ᴛʜᴇɴ ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ ᴀᴛ ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ ɢʀᴏᴜᴘ.**\n\n© @ᴛʜᴇ_ᴄᴀᴛ_ʟᴏᴠᴇʀ𝟶"
             )
             return
     except UserNotParticipant:
