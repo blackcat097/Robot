@@ -318,7 +318,7 @@ async def stream(c: Client, m: Message):
             try:
                 await user.join_chat(m.chat.username)
             except Exception as e:
-                await m.reply_text(f"❌ **userbot failed to join Contact at : @CreatorPavanSupport**\n\n**reason**: `{e}`")
+                await m.reply_text(f"❌ **userbot failed to join Contact at : @catmusicworld**\n\n**reason**: `{e}`")
                 return
         else:
             try:
