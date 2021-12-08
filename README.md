@@ -2,7 +2,7 @@
 <p align="center"><a href="https://t.me/VeezVideoBot"><img src="https://github.com/levina-lab/video-stream/raw/main/driver/veezlogo.png"></a></p>
 
 
-- [![NOT+DEPLOYABLE](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/creatorPavan/Robot&envs=ALIVE_NAME,API_HASH,API_ID,ASSISTANT_NAME,BOT_NAME,BOT_TOKEN,BOT_USERNAME,GROUP_SUPPORT,OWNER_NAME,SESSION_NAME,SUDO_USERS,UPDATES_CHANNEL)
+- [![NOT+DEPLOYABLE](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/blackcat097/Robot&envs=ALIVE_NAME,API_HASH,API_ID,ASSISTANT_NAME,BOT_NAME,BOT_TOKEN,BOT_USERNAME,GROUP_SUPPORT,OWNER_NAME,SESSION_NAME,SUDO_USERS,UPDATES_CHANNEL)
 <p align="center">
     <br><b>Video Stream is an Advanced Telegram Bot that's allow you to play Video & Music on Telegram Group Video Chat</b><br>
 </p>
@@ -70,7 +70,7 @@
 ## Heroku Deployment 💜
 The easy way to host this bot, deploy to Heroku, Change the app country to Europe (it will help to make the bot stable).
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/creatorPavan/Robot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/blackcat097/Robot)
 
 ## VPS Deployment 📡
 Get the best Quality of streaming performance by hosting it on VPS, here's the step's:
